@@ -1,0 +1,59 @@
+{
+    "name": "Editor",
+    "uniqueId": "org.webxdc.editor",
+    "shortDescription": "Small editor webxdc application with export-markdown support.",
+    "description": "Small editor webxdc application with export-markdown support.\n\nThis app uses yjs and prosemirror, along with the y-webxdc provider to offer collaborative editing for webxdc-supporting messengers. While this editor app can be productively used, it focuses on small code size and complexity, and does not aim to become a full-fledged editor. Little improvement PRs are welcome!",
+    "source": "https://codeberg.org/webxdc/editor.git",
+    "banner": "editor.png",
+    "supportedReleases": ["v2.7.0"],
+    "releases": {
+        "v2.7.0": {
+            "image": "node:21-bookworm",
+            "command": "npm install && npm run build && mv dist-release/editor.xdc /out/app.xdc"
+        },
+        "v2.6.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.5.1": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.5.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.4.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.3.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.2.1": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.2.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.1.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.0.2": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.0.1": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        },
+        "v2.0.0": {
+            "image": "node:21-bookworm",
+            "command": "apt update && apt install zip -y && npm install && npm run build && mv build.xdc /out/app.xdc"
+        }
+    }
+}

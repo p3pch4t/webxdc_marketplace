@@ -1,0 +1,15 @@
+{
+    "name": "Calendar",
+    "uniqueId": "org.webxdc.calendar",
+    "shortDescription": "A simple WebXDC calendar application.",
+    "description": "Small editor webxdc application with export-markdown support.\n\nThis app uses yjs and prosemirror, along with the y-webxdc provider to offer collaborative editing for webxdc-supporting messengers. While this editor app can be productively used, it focuses on small code size and complexity, and does not aim to become a full-fledged editor. Little improvement PRs are welcome!",
+    "source": "https://codeberg.org/webxdc/calendar.git",
+    "banner": "calendar.png",
+    "supportedReleases": ["v1.0.1"],
+    "releases": {
+        "v1.0.1": {
+            "image": "node:21-bookworm",
+            "command": "npm install && npm run build && mv dist-xdc/calendar.xdc /out/app.xdc"
+        }
+    }
+}
